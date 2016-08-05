@@ -3,6 +3,28 @@ Build it, take it, view it.
 
 [A Ruby on Rails project from the Viking Code School which uses Active Record Associations, nested forms, collection forms, range fields, and PostgreSQL](https://www.vikingcodeschool.com)
 
+survey
+id | name | description
+
+survey|mcq
+survey_id | mcq_id
+
+survey|number_range
+survey_id | number_range_id
+
+number_range
+id | min | max
+
+mcq
+id | radio/checkbox
+
+mcq|option
+q_id | o_id
+
+options
+id | string
+
+mcq -- select-at-least-one-or-more -- check-box-q -- scale-q
 
 Models:
 1. Survey 
